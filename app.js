@@ -7,7 +7,7 @@ const creat = require(path + '/server/create/index')
 const find = require(path + '/server/create/findCreate')
 
 
-process.stdout.write('请输入内容'+"\n")
+process.stdout.write('请输入内容：' + "\n" +'00：创建' + "\n" +'01：查找各用户创建审批数' + "\n" +'02：审批创建账户' + "\n")
 process.stdin.on("data", (input) => {
   let inputTxt = input.toString().trim()
   console.log(inputTxt)
